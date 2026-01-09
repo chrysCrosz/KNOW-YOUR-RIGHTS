@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conozca Sus Derechos | Know Your Rights - ICE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        .language-toggle {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #2c3e50;
+            border-radius: 5px;
+        }
+        
+        .language-toggle button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .language-toggle button:hover {
+            background-color: #2980b9;
+        }
+        
+        .language-toggle button.active {
+            background-color: #e74c3c;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        
+        .content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .alert-box {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .success-box {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .warning-box {
+            background-color: #f39c12;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+        
+        th, td {
+            border: 2px solid #3498db;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .downloads {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .download-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 10px 10px 0;
+        }
+        
+        .download-link:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-toggle">
+        <button onclick="showSpanish()" id="btnSpanish" class="active">Español</button>
+        <button onclick="showEnglish()" id="btnEnglish">English</button>
+    </div>
+
+    <!-- SPANISH VERSION -->
+    <div id="spanish-content">
+        <header>
+            <h1>CONOZCA SUS DERECHOS</h1>
+            <p class="subtitle">Órdenes de ICE vs. Órdenes Judiciales</p>
+        </header>
+
+        <div class="content">
+            <div class="alert-box">
+                🚨 REGLA CRÍTICA: Si ICE toca a su puerta, NO está obligado a abrir a menos que tengan una orden judicial firmada por un juez.
+            </div>
+
+            <h2>¿Cuándo Debo Abrir la Puerta?</h2>
+            
+            <div class="success-box">
+                ✅ ABRA LA PUERTA SOLAMENTE SI tienen una ORDEN JUDICIAL (Judicial Warrant)
+            </div>
+
+            <h3>Cómo Identificar una Orden Judicial Válida:</h3>
+            <ul>
+                <li><strong>Encabezado:</strong> Dice "U.S. District Court" o "Superior Court" (NO "Department of Homeland Security")</li>
+                <li><strong>Firma:</strong> Firmada por un JUEZ o MAGISTRADO (verá las palabras "Judge", "Honorable" o "Magistrate")</li>
+                <li><strong>Dirección:</strong> Tiene su dirección exacta especificada</li>
+                <li><strong>Fecha:</strong> Debe ser reciente</li>
+            </ul>
+
+            <div class="alert-box">
+                ❌ NO ABRA LA PUERTA SI solo tienen una Orden Administrativa de ICE
+            </div>
+
+            <h3>Cómo Identificar una Orden Administrativa de ICE:</h3>
+            <ul>
+                <li><strong>Encabezado:</strong> Dice "U.S. Department of Homeland Security"</li>
+                <li><strong>Firma:</strong> Firmada por un oficial de ICE o supervisor de DHS (NO un juez)</li>
+                <li><strong>Formularios comunes:</strong> Formulario I-200 (Orden de Arresto) o I-205 (Orden de Deportación)</li>
+                <li><strong>SIN autoridad:</strong> NO les da permiso para entrar sin su consentimiento</li>
+            </ul>
+
+            <h2>Pasos a Seguir Si ICE Toca a Su Puerta</h2>
+            
+            <ol>
+                <li><strong>NO abra la puerta</strong> - ni siquiera un poco</li>
+                <li><strong>Pregunte:</strong> "¿Tienen una orden?" (en inglés: "Do you have a warrant?")</li>
+                <li><strong>Pida ver la orden:</strong> "Deslícenla por debajo de la puerta" o "Muéstrenla por la ventana"</li>
+                <li><strong>Examine el documento cuidadosamente:</strong>
+                    <ul>
+                        <li>Lea el encabezado</li>
+                        <li>Busque la firma de un juez</li>
+                        <li>Verifique la dirección</li>
+                    </ul>
+                </li>
+                <li><strong>Si es solo una orden administrativa de ICE:</strong> Diga claramente: "No doy mi consentimiento para que entren" (en inglés: "I do not consent to your entry")</li>
+                <li><strong>Permanezca en silencio</strong> - no responda preguntas</li>
+            </ol>
+
+            <h2>Tabla Comparativa</h2>
+            
+            <table>
+                <tr>
+                    <th>Característica</th>
+                    <th>Orden Judicial<br>(Sí, Debe Abrir)</th>
+                    <th>Orden Administrativa de ICE<br>(No Abra)</th>
+                </tr>
+                <tr>
+                    <td><strong>Emitida por</strong></td>
+                    <td>Corte / Juez</td>
+                    <td>ICE / DHS</td>
+                </tr>
+                <tr>
+                    <td><strong>Encabezado</strong></td>
+                    <td>"U.S. District Court"<br>"Superior Court"</td>
+                    <td>"Department of Homeland Security"</td>
+                </tr>
+                <tr>
+                    <td><strong>Firmada por</strong></td>
+                    <td>Juez o Magistrado</td>
+                    <td>Oficial de inmigración</td>
+                </tr>
+                <tr>
+                    <td><strong>¿Pueden entrar sin permiso?</strong></td>
+                    <td>SÍ</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td><strong>Su decisión</strong></td>
+                    <td>Debe permitir entrada</td>
+                    <td>USTED decide si los deja entrar</td>
+                </tr>
+            </table>
+
+            <h2>Sus Derechos Constitucionales</h2>
+            
+            <div class="warning-box">
+                📋 Estos derechos le protegen bajo la Cuarta Enmienda de la Constitución de los EE.UU.
+            </div>
+
+            <ul>
+                <li><strong>Derecho a guardar silencio:</strong> No tiene que responder preguntas sobre su estatus migratorio, lugar de nacimiento o cómo entró al país</li>
+                <li><strong>Derecho a un abogado:</strong> Puede decir "Quiero hablar con mi abogado" (en inglés: "I want to speak to a lawyer")</li>
+                <li><strong>Derecho a no firmar nada:</strong> NO firme ningún documento sin hablar primero con un abogado</li>
+                <li><strong>Derecho al consulado:</strong> Si no es ciudadano de EE.UU., puede pedir contactar al consulado de su país</li>
+                <li><strong>Derecho a no dar consentimiento:</strong> Diga claramente que no da permiso para registros o entrada</li>
+            </ul>
+
+            <h2>Información Adicional Importante</h2>
+            
+            <ul>
+                <li>Las órdenes administrativas de ICE NO son órdenes judiciales y NO le obligan a abrir la puerta</li>
+                <li>ICE puede entrar a espacios públicos, pero NO puede entrar a su casa sin una orden judicial o su consentimiento</li>
+                <li>Si ICE entra a su casa ilegalmente, no resista físicamente - documente todo lo que pueda</li>
+                <li>Tome fotos de cualquier documento que le muestren (si puede hacerlo de manera segura)</li>
+                <li>Memorice el número de teléfono de un abogado de inmigración o una organización de derechos</li>
+            </ul>
+
+            <div class="downloads">
+                <h3>📥 Descargar Documentos de Referencia</h3>
+                <a href="ICE_Know_Your_Rights_Complete_Packet.docx" class="download-link">Paquete Completo (DOCX)</a>
+                <a href="ICE_Warrant_Comparison.docx" class="download-link">Comparación de Órdenes (DOCX)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div id="english-content" class="hidden">
+        <header>
+            <h1>KNOW YOUR RIGHTS</h1>
+            <p class="subtitle">ICE Orders vs. Real Warrants</p>
+        </header>
+
+        <div class="content">
+            <div class="alert-box">
+                🚨 CRITICAL RULE: If ICE knocks on your door, you are NOT required to open it unless they have a judicial warrant signed by a judge.
+            </div>
+
+            <h2>When Should I Open the Door?</h2>
+            
+            <div class="success-box">
+                ✅ ONLY OPEN THE DOOR IF they 
